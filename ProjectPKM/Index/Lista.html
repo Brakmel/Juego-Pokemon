@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+    <link  rel="stylesheet" href="Color/estiloSM.css">
+</head>
+<body>
+    <header>
+        <h1>PKM TORNEO MAESTRO</h1>
+    </header>
+    <header>
+        <button>
+            <a href="subMenu.html">Regresar al Menu Principal</a>
+        </button>
+    </header>
+    <header>
+        <h2>¡Recuerde sacar captura!</h2>, 
+        <h3>Tienes 3 tipos de pokemones disponible; Audino, Charizard y Snorlax </h3>
+    </header>
+    <main>
+        <table>
+            <tr>
+                <td>
+                    <form autocomplete="off" onsubmit="onFormSubmit()">
+                        <div>
+                            <label for="NICK">Nombre completo</label>
+                            <input type="text" name="NICK" id="NICK">
+                        </div>
+                        <div>
+                            <label for="CITY">Ciudad</label>
+                            <input type="text" name="CITY" id="CITY">
+                        </div>
+                        <div>
+                            <label for="DATE">Fecha de encuentro</label>
+                            <input type="text" name="DATE" id="DATE">
+                        </div>
+                        <div>
+                            <label for="DUO">Duo pokemon</label>
+                            <input type="text" name="DUO" id="DUO">
+                        </div>
+    
+                        <div class="form_action--button">
+                            <input type="submit" value="OK">
+                        </div>
+                    </form>
+    
+                    <td>
+                        <table class="list" id="ResultList">
+                            <thead>
+                                <tr>
+                                    <th>Nombre completo</th>
+                                    <th>Ciudad</th>
+                                    <th>Fecha de encuentro</th>
+                                    <th>Pokemones inscritos</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+    
+                            </tbody>
+                        </table>
+                    </td>
+                </td>
+            </tr>
+        </table>
+        <script type="text/javascript" src="js.js"></script>
+    </main>
+    <footer>
+        <div class="Musica">
+            <h2>Esta sonando: Quiero siempre el triunfo | Nicolás Silva |</h2>
+        </div>
+        <audio controls>
+            <source src="PKMSONG.mp3" type="audio/mpeg">
+        </audio>
+    </footer>
+</body>
+</html>

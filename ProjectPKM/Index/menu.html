@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalla PKM</title>
+    <link rel = "stylesheet" href="Color/estiloM.css">
+</head>
+<body>
+    <header>
+        <h1>PKM TORNEO MAESTRO</h1>
+    </header>
+    <header>
+            <strong>Seleccion entrenador Rojo:</strong>
+            <button onclick="seleccionar_sacerdote_p1();">Audino </button>
+            <button onclick="seleccionar_picaro_p1();">Charizard</button>
+            <button onclick="seleccionar_guerrero_p1();">Snorlax</button>
+            <strong>🔴</strong>
+            <button onclick="seleccionar_sacerdote_p2();">Audino</button>
+            <button onclick="seleccionar_picaro_p2();">Charizard</button>
+            <button onclick="seleccionar_guerrero_p2();">Snorlax</button>
+    </header>
+    <header>
+          <strong>Seleccion entrenador Azul:</strong>
+          <button onclick="seleccionar_sacerdote_p3();">Audino</button>
+          <button onclick="seleccionar_picaro_p3();">Charizard</button>
+          <button onclick="seleccionar_guerrero_p3();">Snorlax</button>
+           <strong>🔵</strong>
+          <button onclick="seleccionar_sacerdote_p4();">Audino</button>
+          <button onclick="seleccionar_picaro_p4();">Charizard</button>
+          <button onclick="seleccionar_guerrero_p4();">Snorlax</button>
+    </header>
+    <header>
+        <button class="boton_SM">
+            <a href="subMenu.html">Regresar al menu principal</a>
+        </button>
+    </header>
+    <main>
+        <section class="Tablero_margin">
+            <div class="margin_control">
+                <strong>Pokemon 1 HP 🔴</strong>
+                <div id="vida_p1">     
+                </div>
+                <br>
+                <img src="" id="imagen_atk1_p1">
+                <button id="boton_atk1_p1" onclick="boton_atk1_p1();"></button>
+                <br>
+                <img src="" id="imagen_atk2_p1">
+                <button id="boton_atk2_p1" onclick="boton_atk2_p1();"></button>   
+            </div>
+            <div class="margin_control2">
+                <strong>Pokemon 2 HP 🔴</strong>
+                <div id="vida_p2">
+                </div><br>
+                <img src="" id="imagen_atk1_p2">
+                <button id="boton_atk1_p2" onclick="boton_atk1_p2();"></button>
+                <br>
+                <img src="" id="imagen_atk2_p2">
+                <button id="boton_atk2_p2" onclick="boton_atk2_p2();"></button>
+             </div>
+            <div class="Tablero">  
+                <section class="carousel"> 
+                    <div class="Picaro" id="r_player_1">
+                    </div>
+                </section>
+                <section class="carousel"> 
+                        <div class="Sacerdote" id="r_player_2">
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="margin_control">
+                <strong>Pokemon 3 HP 🔵</strong>
+                <div id="vida_p3">     
+                </div>
+                <br>
+                <img src="" id="imagen_atk1_p3">
+                <button id="boton_atk1_p3" onclick="boton_atk1_p3();"></button>
+                <br>
+                <img src="" id="imagen_atk2_p3">
+                <button id="boton_atk2_p3" onclick="boton_atk2_p3();"></button>   
+            </div>
+            <div class="margin_control2">
+                <strong>Pokemon 4 HP 🔵</strong>
+                <div id="vida_p4">
+                </div><br>
+                <img src="" id="imagen_atk1_p4">
+                <button id="boton_atk1_p4" onclick="boton_atk1_p4();"></button>
+                <br>
+                <img src="" id="imagen_atk2_p4">
+                <button id="boton_atk2_p4" onclick="boton_atk2_p4();"></button>
+             </div>
+        </section>
+    </main>
+    <footer>
+        <div class="Musica">
+            <h2>Esta sonando: Quiero siempre el triunfo | Nicolás Silva |</h2>
+        </div>
+        <audio controls>
+            <source src="PKMSONG.mp3" type="audio/mpeg">
+        </audio>
+    </footer>
+    <script src="js.js"></script>
+</body>
+</html>
